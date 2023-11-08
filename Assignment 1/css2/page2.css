@@ -1,0 +1,77 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(37,34,34);
+    color: white;
+
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-size: 20px;
+    text-align: left;
+    background-color: black;
+}
+
+main {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: grid;
+    grid-template-areas: 
+    "img textarea1"
+    "img name"
+    "img textarea2"
+    "img email"
+    "img textarea3"
+    "img message"
+}
+
+img {
+    grid-area: img;
+    width: 40%;
+    height: auto;
+    margin-left: 30%;
+}
+
+#container-1 {
+    grid-area: textarea1;
+}
+
+#container-2 {
+    grid-area: name;
+}
+
+#container-3 {
+    grid-area: textarea2;
+}
+
+#container-4 {
+    grid-area: email;
+}
+
+#container-5 {
+    grid-area: textarea3;
+}
+
+#container-6 {
+    grid-area: message;
+}
+
+section {
+    margin-right: 30%;
+}
+
+textarea {
+    background-color: white;
+    margin-top: 5%;
+    color: black;
+}
+
+button {
+    margin-top: 5%;
+    background-color: turquoise;
+    color: black;
+}
