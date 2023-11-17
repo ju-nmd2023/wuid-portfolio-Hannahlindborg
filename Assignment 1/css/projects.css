@@ -1,0 +1,23 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(37, 34, 34);
+}
+
+h1 {
+    text-align: left;
+}
+
+.header {
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    margin-top: 0%;
+    margin-bottom: 2%;
+}
+
+.header-links {
+    display: flex;
+    align-items: right;
+    font-size: 14pt;
+}

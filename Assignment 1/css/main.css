@@ -9,11 +9,64 @@ body {
 }
 
 h1 {
-    font-size: 20px;
     text-align: left;
+}
+
+.header {
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
     background-color: black;
     margin-top: 0%;
     margin-bottom: 2%;
+}
+
+.headerlinks {
+    display: flex;
+    font-size: 14pt;
+    background-color: black;
+}
+
+main {
+    display: grid;
+    grid-template-areas:
+    "text img"
+    "nav nav";
+    margin-top: 5%;
+    grid-template-columns: 1fr 1fr;
+    column-gap: -10%;
+}
+
+.image-container {
+    text-align: left;
+}
+
+img {
+    grid-area: img;
+    width: 40%;
+    height: auto;
+    margin-top: 0%;
+}
+
+.text {
+    grid-area: text;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+nav {
+    grid-area: nav;
+}
+
+ul {
+    font-size: 14pt;
+    display: flex;
+}
+
+li {
+    margin-left: 40%;
+    margin-top: 2%;
+    list-style: none;
 }
 
 h2 {
@@ -33,19 +86,8 @@ p {
     margin-top: 2%;
 }
 
-ul {
-    text-align: left;
-    list-style: none;
-}
-
-ul:hover {
+li:hover {
     text-decoration: underline;
     text-transform: blue;
     text-decoration-color: blue;
-}
-
-img {
-    width: 15%;
-    height: auto;
-    margin-top: 0%;
 }

@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "wuid-portfolio-Hannahlindborg",
+			"path": ".."
+		},
+		{
+			"name": "Assignment 1",
+			"path": "../../../../Desktop/Assignment 1"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "wuid-portfolio-Hannahlindborg"
+	}
+}
