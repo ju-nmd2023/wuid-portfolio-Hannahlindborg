@@ -1,0 +1,156 @@
+* {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(37, 34, 34);
+  color: white;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+}
+
+li {
+  list-style: none;
+  margin-left: 5%;
+  background-color: black;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+h1 {
+  font-size: 20px;
+  text-align: left;
+  margin-top: 0%;
+  margin-bottom: 2%;
+}
+
+p {
+  margin-top: 10%;
+}
+
+main {
+  display: grid;
+  grid-template-areas: "img text";
+  grid-template-columns: 1fr 1fr;
+  column-gap: 0%;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+img {
+  grid-area: img;
+  column-span: 1;
+  width: 50%;
+  height: auto;
+  margin-top: 5%;
+}
+
+#main-image {
+  margin-left: 30%;
+}
+
+#reference-image {
+  margin-left: 40%;
+}
+
+.images {
+  display: flex;
+}
+
+.images img {
+  border-radius: 50%;
+  width: 30%;
+  height: auto;
+  margin-top: 10%;
+}
+
+.text {
+  grid-area: text;
+  margin-right: 30%;
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    display: grid;
+    grid-template-areas:
+      "img"
+      "text";
+    grid-template-columns: 1fr;
+    column-gap: 0%;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .text {
+    text-align: center;
+    margin-right: 0%;
+    margin-bottom: 5%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .images img {
+    width: 30%;
+    height: auto;
+    margin-top: 10%;
+  }
+
+  .images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #reference-image {
+    margin-left: 0%;
+  }
+
+  #main-image {
+    margin-left: 25%;
+  }
+}
+
+/*Animations*/
+
+@keyframes images {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+#main-image {
+  animation-name: images;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+  animation-fill-mode: both;
+}
+
+#closeup {
+  animation-name: images;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+#reference-image {
+  animation-name: images;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+}

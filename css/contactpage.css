@@ -1,0 +1,187 @@
+* {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(37, 34, 34);
+  color: white;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+  margin-left: 5%;
+  background-color: black;
+}
+
+h1 {
+  font-size: 20px;
+  text-align: left;
+  margin-top: 0%;
+  margin-bottom: 2%;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+header {
+  text-align: center;
+}
+
+main {
+  display: grid;
+  grid-template-areas: "img contact";
+  grid-template-columns: 1fr 1fr;
+  column-gap: 0%;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+img {
+  grid-area: img;
+  column-span: 1;
+  width: 40%;
+  height: auto;
+  margin-left: 30%;
+}
+
+.contact {
+  grid-area: contact;
+  display: grid;
+  grid-template-areas:
+    "textarea1 textarea2"
+    "name1 name2"
+    "textarea3 textarea3"
+    "email email"
+    "textarea4 textarea4"
+    "message message"
+    "button button";
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5%;
+}
+
+.container-1 {
+  grid-area: textarea1;
+}
+
+.container-2 {
+  grid-area: textarea2;
+}
+
+.container-3 {
+  grid-area: name1;
+}
+
+.container-4 {
+  grid-area: name2;
+}
+
+.container-5 {
+  grid-area: textarea3;
+}
+
+.container-6 {
+  grid-area: email;
+}
+
+.container-7 {
+  grid-area: textarea4;
+}
+
+.container-8 {
+  grid-area: message;
+}
+
+.container-9 {
+  grid-area: button;
+  text-align: center;
+}
+
+textarea {
+  background-color: white;
+  margin-top: 5%;
+  color: black;
+  width: 200px;
+}
+
+/*Animation*/
+
+@keyframes images {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+img {
+  animation-name: images;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+  animation-fill-mode: both;
+}
+
+button {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  border: 2px solid #00c2cb;
+  background: none;
+  color: #00c2cb;
+  cursor: pointer;
+  outline: none;
+  transition: 200ms;
+  margin-top: 5%;
+  margin-left: 50%;
+}
+
+#submitted {
+  opacity: 0%;
+  position: absolute;
+  transition: 500ms;
+}
+
+button:focus {
+  color: transparent;
+  outline: none;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 25px 25px;
+  border-left: 2px solid #00c2cb;
+  animation: spin 2s 500ms forwards;
+}
+
+@keyframes spin {
+  80% {
+    border: 2px solid transparent;
+    border-left: 2px solid #00c2cb;
+  }
+  100% {
+    transform: rotate(720deg);
+    border: 2px solid #00c2cb;
+  }
+}
+
+@keyframes submitted {
+  to {
+    opacity: 100%;
+  }
+}
+
+button:focus #submitted {
+  animation: submitted 300ms 2300ms forwards;
+}
+
+/*Submitted animation code from https://www.sitepoint.com/button-micro-interactions/*/
