@@ -1,0 +1,134 @@
+html {
+  background: radial-gradient (#252222, #000000);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  background-color: #252222;
+}
+
+body {
+  text-align: center;
+  color: white;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    justify-content: center;
+  }
+  
+  li {
+    list-style: none;
+    margin-left: 5%;
+    background-color: black;
+    margin-top: 2%;
+    font-size: 20px;
+  }
+  
+  h1 {
+    font-size: 20px;
+    text-align: left;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  
+
+main {
+  display: grid;
+  grid-template-areas: "text image";
+  margin-top: 5%;
+  margin-right: 10%;
+  margin-left: 10%;
+  grid-template-columns: 1fr 1fr;
+}
+
+.text {
+  grid-area: text;
+}
+
+.image {
+  grid-area: image;
+}
+
+#profilepicture {
+  width: 220px;
+  height: 220px;
+  rotate: 10deg;
+}
+
+#instagram {
+  margin-right: 20%;
+  width: 200px;
+  height: auto;
+}
+
+#resumé {
+  font-size: 11pt;
+}
+
+#resumé:hover {
+  text-decoration-line: underline;
+}
+
+#download {
+  margin-left: 5px;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+  column-width: 140px;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+h2 {
+  font-size: 30px;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+h3 {
+  font-size: 60px;
+  margin-top: 0%;
+  margin-bottom: 2%;
+}
+
+p {
+  font-size: 20px;
+  margin-top: 2%;
+}
+
+img {
+  width: 15%;
+  height: auto;
+  margin-top: 0%;
+}
+
+/*Animation*/
+
+@keyframes images {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+#profilepicture {
+  animation-name: images;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}

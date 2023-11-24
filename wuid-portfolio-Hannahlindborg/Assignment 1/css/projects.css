@@ -1,0 +1,156 @@
+* {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(37, 34, 34);
+  color: white;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  justify-content: center;
+}
+
+li {
+  list-style: none;
+  margin-left: 5%;
+  background-color: black;
+  margin-top: 2%;
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 20px;
+  text-align: left;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+li:hover {
+    text-decoration:underline;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 5%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+/*responsive layout*/
+
+@media screen and (max-width: 1200px) {
+  .images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5%;
+    margin-right: 0%;
+    margin-left: 0%;
+  }
+}
+
+@media screen and (min-height: 900px) {
+  .images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .images {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+/*css animation*/
+
+@keyframes images {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+#rabbit {
+  animation-name: images;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+  animation-fill-mode: both;
+}
+
+#bwportrait {
+  animation-name: images;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+#tiger {
+  animation-name: images;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+}
+
+#closeup {
+  animation-name: images;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  animation-delay: 1.5s;
+  animation-fill-mode: both;
+}
+
+#portrait {
+  animation-name: images;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+}
+
+#amazon {
+  animation-name: images;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  animation-delay: 2.5s;
+  animation-fill-mode: both;
+}
+
+/*interaction*/
