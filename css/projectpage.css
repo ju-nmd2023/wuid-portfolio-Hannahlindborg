@@ -4,27 +4,27 @@
   color: white;
 }
 
+
 .header {
-  display: flex;
-  flex-direction: row;
-  background-color: black;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    justify-content: center;
 }
-
+      
 li {
-  list-style: none;
-  margin-left: 5%;
-  background-color: black;
+    list-style: none;
+    margin-left: 5%;
+    background-color: black;
+    margin-top: 2%;
+    font-size: 20px;
 }
-
-a {
-  text-decoration-line: none;
-}
-
+      
 h1 {
-  font-size: 20px;
-  text-align: left;
-  margin-top: 0%;
-  margin-bottom: 2%;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 p {

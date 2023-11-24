@@ -5,24 +5,27 @@
 }
 
 .header {
-  display: flex;
-  flex-direction: row;
-  background-color: black;
-  text-align: center;
-}
-
-li {
-  list-style: none;
-  margin-left: 5%;
-  background-color: black;
-}
-
-h1 {
-  font-size: 20px;
-  text-align: left;
-  margin-top: 0%;
-  margin-bottom: 2%;
-}
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    justify-content: center;
+  }
+  
+  li {
+    list-style: none;
+    margin-left: 5%;
+    background-color: black;
+    margin-top: 2%;
+    font-size: 20px;
+  }
+  
+  h1 {
+    font-size: 20px;
+    text-align: left;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  
 
 a {
   text-decoration-line: none;

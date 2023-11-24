@@ -8,20 +8,26 @@
   display: flex;
   flex-direction: row;
   background-color: black;
+  justify-content: center;
 }
 
 li {
   list-style: none;
   margin-left: 5%;
   background-color: black;
-  margin-right: 0%;
+  margin-top: 2%;
+  font-size: 20px;
 }
 
 h1 {
   font-size: 20px;
   text-align: left;
-  margin-top: 0%;
+  margin-top: 2%;
   margin-bottom: 2%;
+}
+
+li:hover {
+    text-decoration:underline;
 }
 
 .images {
@@ -30,29 +36,14 @@ h1 {
   column-gap: 5%;
   margin-left: 20%;
   margin-right: 20%;
-  margin-top: 1%;
+  margin-top: 5%;
 }
 
 img {
   width: 100%;
   height: auto;
-  margin-top: 10%;
-}
-
-#logotype {
-  background-color: white;
-}
-
-figcaption {
-  margin-top: 5%;
-}
-
-figcaption:hover {
-  text-decoration: underline;
-}
-
-a {
-  text-decoration-line: none;
+  margin-top: 0%;
+  margin-bottom: 0%;
 }
 
 /*responsive layout*/
